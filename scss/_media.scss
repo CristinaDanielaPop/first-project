@@ -1,0 +1,104 @@
+// // Tablets
+// @media (max-width: 1024px) {
+//   #header {
+//     &-home {
+//       height: 30rem;
+
+//       .header-content {
+//         padding-top: 5rem;
+//       }
+//     }
+
+//     &-inner {
+//       ul a[href^="index.html"] {
+//         color: black;
+//         font-weight: bolder;
+//       }
+//     }
+//   }
+
+//   #about {
+//     &-a {
+//       .leaves {
+//         .story {
+//           grid-template-columns: repeat(1fr, 1fr);
+//           grid-gap: 1rem;
+
+//           .info {
+//             padding-top: 0rem;
+
+//             h2 {
+//               font-size: 2rem;
+//             }
+
+//             p {
+//               font-size: 25px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // Smaller
+// @media (max-width: 800px) {
+//   #home {
+//     &-a {
+//       p {
+//         align-items: center;
+//         padding-left: 2rem;
+//         padding-right: 2rem;
+//       }
+//     }
+//   }
+
+//   #about {
+//     &-a {
+//       .leaves {
+//         .set,
+//         .set2,
+//         .set3 {
+//           visibility: hidden;
+//         }
+
+//         .story {
+//           visibility: visible;
+//           grid-template-areas:
+//             "me"
+//             "bio";
+//           position: relative;
+//           padding-top: 0;
+
+//           .info {
+//             visibility: hidden !important;
+//           }
+
+//           .me {
+//             font-size: 20px;
+//             margin: auto;
+//             text-align: left;
+//           }
+
+//           .bio {
+//             font-size: 20px;
+//             margin: auto;
+//             text-align: left;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   #main-footer {
+//     .footer-content {
+//       .gotopbtn {
+//         .fas {
+//           right: 20px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // Smartphones
