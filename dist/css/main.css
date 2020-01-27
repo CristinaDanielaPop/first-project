@@ -82,6 +82,145 @@ input[class^="btn-"]:hover {
   background: #48dbfb;
   color: #000; }
 
+@media (max-width: 800px) {
+  #header-inner ul a[href^="index.html"] {
+    color: black;
+    font-weight: bolder; }
+  #home-a p {
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  #about-a .leaves .set,
+  #about-a .leaves .set2,
+  #about-a .leaves .set3 {
+    visibility: hidden; }
+  #about-a .leaves .story {
+    visibility: visible;
+    grid-template-columns: 1fr;
+    grid-template-areas: "me" "bio";
+    line-height: 0.5rem; }
+    #about-a .leaves .story .info {
+      visibility: hidden !important; }
+    #about-a .leaves .story .me {
+      font-size: 16px;
+      margin: auto;
+      text-align: left;
+      position: absolute;
+      margin-top: 0rem;
+      padding-top: 0;
+      top: 0; }
+    #about-a .leaves .story .bio {
+      font-size: 16px;
+      margin: auto;
+      text-align: left;
+      margin-bottom: 0rem;
+      padding-bottom: 0rem;
+      bottom: 0;
+      position: absolute; }
+  #about-b {
+    height: 20%; }
+  #main-footer .footer-content .gotopbtn .fas {
+    right: 20px; } }
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    line-height: 1rem; }
+    #main-nav li {
+      padding: 0.5rem; }
+  #header-home {
+    overflow: visible;
+    align-items: center;
+    padding-bottom: 0rem;
+    background: url("../img/head1.jpg") no-repeat 20% 30%/cover; }
+    #header-home .header-content h1 {
+      display: none; }
+    #header-home .header-content h2 {
+      visibility: visible !important;
+      font-size: 60px; }
+  #header-inner {
+    height: 10rem;
+    font-weight: bolder; }
+    #header-inner li a[href^="index.html"] {
+      visibility: visible;
+      color: #fff; }
+    #header-inner a[href^="index.html"] :first-child {
+      display: none; }
+  #home-a {
+    line-height: 1rem;
+    height: 100% !important;
+    align-items: center; }
+    #home-a p {
+      line-height: 2rem; }
+    #home-a .specials {
+      grid-template-columns: 1fr !important;
+      grid-gap: 0.5rem; }
+    #home-a .specials div {
+      border-bottom: 2px #48dbfb dotted;
+      padding-bottom: 0.2rem; }
+      #home-a .specials div:last-child {
+        border: none;
+        padding-bottom: 0; }
+  #about-a .leaves {
+    height: 100%; }
+    #about-a .leaves .set,
+    #about-a .leaves .set2,
+    #about-a .leaves .set3 {
+      visibility: hidden; }
+    #about-a .leaves .story {
+      visibility: visible;
+      display: flex !important;
+      flex-direction: column !important;
+      line-height: 1.5rem !important; }
+      #about-a .leaves .story .info {
+        visibility: hidden !important; }
+      #about-a .leaves .story .me {
+        font-size: 18px !important;
+        text-align: left;
+        position: absolute;
+        margin: auto;
+        margin-top: 1rem !important;
+        margin-left: 3rem !important;
+        padding: auto; }
+      #about-a .leaves .story .bio {
+        font-size: 18px !important;
+        text-align: left;
+        position: relative;
+        margin: auto;
+        margin-right: 3rem !important;
+        padding: auto; }
+  #about-b {
+    background: url("../img/creative.jpg") no-repeat 20% 20%/cover !important; }
+    #about-b .mail {
+      font-size: 18px !important;
+      color: #222f3e;
+      margin: auto !important;
+      align-items: center;
+      bottom: 3% !important; }
+      #about-b .mail a {
+        color: #333;
+        font-weight: bolder; }
+  #wrapper {
+    height: 100% !important;
+    margin: auto !important; }
+    #wrapper .form-container .text-fields {
+      grid-template-areas: "name" "email" "subject" "phone" "message" !important; }
+      #wrapper .form-container .text-fields .message-input {
+        width: 80% !important; }
+  #main-footer {
+    height: 7rem !important; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; }
+      #main-footer .footer-content .gotopbtn .fas {
+        width: 30px !important;
+        height: 30px !important;
+        right: 30px !important;
+        line-height: 30px !important;
+        font-size: 18px !important; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -153,6 +292,8 @@ img {
       background-clip: text;
       -webkit-background-clip: text;
       animation: water 15s infinite; }
+    #header-home .header-content h2 {
+      visibility: hidden; }
     #header-home .header-content p {
       font-size: 50px; }
 

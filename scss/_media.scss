@@ -1,104 +1,270 @@
-// // Tablets
-// @media (max-width: 1024px) {
-//   #header {
-//     &-home {
-//       height: 30rem;
+//Tablets & Smaller
+@media (max-width: 800px) {
+#header {
+  &-inner {
+    ul a[href^="index.html"] {
+      color: black;
+      font-weight: bolder;
+    }
+  }
+}
 
-//       .header-content {
-//         padding-top: 5rem;
-//       }
-//     }
+  #home {
+    &-a {
+      p {
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+  }
 
-//     &-inner {
-//       ul a[href^="index.html"] {
-//         color: black;
-//         font-weight: bolder;
-//       }
-//     }
-//   }
+  #about {
+    &-a {
+      .leaves {
+        .set,
+        .set2,
+        .set3 {
+          visibility: hidden;
+          
+        }
 
-//   #about {
-//     &-a {
-//       .leaves {
-//         .story {
-//           grid-template-columns: repeat(1fr, 1fr);
-//           grid-gap: 1rem;
+        .story {
+          visibility: visible;
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            "me"
+            "bio";
+            line-height: 0.5rem;
 
-//           .info {
-//             padding-top: 0rem;
+          .info {
+            visibility: hidden !important;
+          }
 
-//             h2 {
-//               font-size: 2rem;
-//             }
+          .me {
+            font-size: 16px;
+            margin: auto;
+            text-align: left;
+            position: absolute;
+            margin-top: 0rem;
+            padding-top: 0;
+            top: 0;
+            
+        
+          }
 
-//             p {
-//               font-size: 25px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+          .bio {
+            font-size: 16px;
+            margin: auto;
+            text-align: left;
+            margin-bottom: 0rem;
+            padding-bottom: 0rem;
+            bottom: 0;
+            position: absolute;
+           
+          }
+        }
+      }
+    }
 
-// // Smaller
-// @media (max-width: 800px) {
-//   #home {
-//     &-a {
-//       p {
-//         align-items: center;
-//         padding-left: 2rem;
-//         padding-right: 2rem;
-//       }
-//     }
-//   }
+    &-b {
+      height: 20%;
+    }
+  }
 
-//   #about {
-//     &-a {
-//       .leaves {
-//         .set,
-//         .set2,
-//         .set3 {
-//           visibility: hidden;
-//         }
+  #main-footer {
+    .footer-content {
+      .gotopbtn {
+        .fas {
+          right: 20px;
+        }
+      }
+    }
+  }
+}
 
-//         .story {
-//           visibility: visible;
-//           grid-template-areas:
-//             "me"
-//             "bio";
-//           position: relative;
-//           padding-top: 0;
 
-//           .info {
-//             visibility: hidden !important;
-//           }
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    line-height: 1rem;
+    
 
-//           .me {
-//             font-size: 20px;
-//             margin: auto;
-//             text-align: left;
-//           }
+    li {
+      padding: 0.5rem;
+    }
+  }
 
-//           .bio {
-//             font-size: 20px;
-//             margin: auto;
-//             text-align: left;
-//           }
-//         }
-//       }
-//     }
-//   }
+  #header {
+    &-home {
+      // height: 6rem !important;
+      overflow: visible;
+      align-items: center;
+      padding-bottom: 0rem;
+      // border: 3px solid $medium-color;
+      background: $bg-image no-repeat 20% 30% / cover;
 
-//   #main-footer {
-//     .footer-content {
-//       .gotopbtn {
-//         .fas {
-//           right: 20px;
-//         }
-//       }
-//     }
-//   }
-// }
+      .header-content {
+        h1 {
+         display: none;
+        }
 
-// // Smartphones
+        h2 {
+          visibility: visible !important;
+          font-size: 60px;
+        }
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+      font-weight: bolder;
+
+      li {
+         a[href^="index.html"] {
+        visibility: visible;
+        color: #fff;
+        }
+      }
+
+      a[href^="index.html"] :first-child  {
+      display: none;
+    }
+    }
+  }
+
+  #home {
+    &-a {
+      line-height: 1rem;
+      height: 100% !important;
+      align-items: center;
+
+      p {
+        line-height: 2rem;
+      }
+
+      .specials {
+        grid-template-columns: 1fr !important;
+        grid-gap: 0.5rem;
+      }
+
+
+      .specials div {
+       border-bottom: 2px $light-color dotted;
+       padding-bottom: 0.2rem;
+
+       &:last-child {
+         border: none;
+         padding-bottom: 0;
+       }
+      }
+    }
+  }
+
+  #about {
+    &-a {
+      .leaves {
+        height: 100%;
+
+        .set,
+        .set2,
+        .set3 {
+          visibility: hidden;
+        }
+
+        .story {
+          visibility: visible;
+          display: flex !important;
+          flex-direction: column !important;
+          // grid-template-columns: 1fr !important;
+          // grid-template-areas:
+          //   "me" 
+          //   "bio";
+            line-height: 1.5rem !important;
+     
+
+          .info {
+            visibility: hidden !important;
+          }
+
+          .me {
+            font-size: 18px !important;
+            text-align: left;
+            position: absolute;
+            margin: auto;
+            margin-top: 1rem !important;
+            margin-left: 3rem !important;
+            padding: auto;
+          }
+
+          .bio {
+            font-size: 18px !important;
+            text-align: left;
+            position: relative;
+            margin: auto;
+            margin-right: 3rem !important;
+            padding: auto;
+          }
+        }
+      }
+    }
+
+    &-b {
+      background: url('../img/creative.jpg') no-repeat 20% 20% / cover !important;
+
+      .mail {
+        font-size: 18px !important;
+        color: $main-color;
+        margin: auto !important;
+        align-items: center;
+        bottom: 3% !important;
+
+        a {
+          color: $dark-color;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+
+  #wrapper {
+    height: 100% !important;
+    margin: auto !important;
+
+    .form-container {
+      .text-fields {
+        grid-template-areas: 
+        "name"
+        "email"
+        "subject"
+        "phone"
+        "message" !important;
+
+        .message-input {
+          width: 80% !important;
+        }
+      }
+    }
+  }
+
+  #main-footer {
+    height: 7rem !important;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+
+      .gotopbtn {
+        .fas {
+          width: 30px !important;
+          height: 30px !important;
+          right: 30px !important;
+          line-height: 30px !important;
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+}
