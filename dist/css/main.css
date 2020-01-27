@@ -178,7 +178,9 @@ input[class^="btn-"]:hover {
         margin: auto;
         margin-top: 1rem !important;
         margin-left: 3rem !important;
-        padding: auto; }
+        padding: auto;
+        border-left: 4px solid #54a0ff !important;
+        border-left-style: double !important; }
       #about-a .leaves .story .bio {
         font-size: 18px !important;
         text-align: left;
@@ -442,6 +444,7 @@ img {
     #about-a .leaves .story .me {
       grid-area: me;
       font-size: 28px;
+      margin: auto;
       margin-top: 5rem;
       margin-left: 7rem;
       margin-right: 3rem;
