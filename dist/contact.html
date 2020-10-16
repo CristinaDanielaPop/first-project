@@ -8,6 +8,7 @@
   <script src="https://kit.fontawesome.com/0c3f7af6a4.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Merriweather&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous"/>
   <title>Contact Me | Web Development</title>
 </head>
 
@@ -34,7 +35,7 @@
     <div class="star2"></div>
     <div class="star3"></div>
 
-    <div class="form-container  text-center">
+    <div class="form-container  text-center"  data-aos="flip-up">
       <h1>Contact Me</h1>
       <p class="lead">Here is how you can reach me</p>
 
@@ -45,9 +46,6 @@
           <input type="email" class="text-input email-input" placeholder="Email Address" name="email" />
           <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
           <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
-<!--           <div class="my-2 text-center" style="text-align: center">
-            <div data-netlify-recaptcha="true" style="display: inline-block"></div>
-          </div> -->
         </div>
         <button type="submit" class="btn-dark">Submit</button>
       </form>
@@ -68,6 +66,15 @@
       </div>
     </div>
   </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+   <script>
+     AOS.init({
+       delay: 200,
+       duration: 1200,
+       once: false
+     })
+   </script>
 </body>
 
 </html>
